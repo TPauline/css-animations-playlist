@@ -1,5 +1,58 @@
-.wrapper{
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
+
+    /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                  some things
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+body {
+    background: lightblue;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+    /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                  TRANSFROMATIONS
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+img{
+    /* transform:translateX(200px) ; 
+    transform:translateY(200px) ;  */
+    /* transform:translate(200px ,500px) ;  */
+
+    /* transform: scale(0.5);
+    transform: scaleY(3); */
+    /* transform: scale(1,2); */
+
+    /* transform: rotateX(60deg);
+    transform: rotateY(60deg); */
+    /* transform: rotateZ(180deg); */
+    transform: rotateZ(20deg) translateY(200px) translateY(-200px); 
+}
+
+  /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                    TRANSITIONS
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.circle{
+    width: 100px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: 60px auto;
+    background: pink;
+    border-radius: 50px;
+    cursor: pointer;
+     /*want transition to affect specfic things*/
+     /* transition: 1s;  */
+
+    /*want transition to affect specfic things and also delay and rate */
+    /* transition: background 1s, transform 0.3s 1s linear;  */
+
+     /*want transition to affect to have  and also delay and rate */
+     transition: 0.3s 1s ease-in; 
+}
+
+.circle:hover{
+    background: salmon;
+    transform: rotate(360deg);
 }
